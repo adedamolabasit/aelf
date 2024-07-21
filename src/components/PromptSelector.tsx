@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { EllipsisVerticalIcon } from '@heroicons/react/20/solid';
+import { DialogGetStartedflowMessenger } from './DialogGetStartedflowMessenger';
 
 type Project = {
   name: string;
@@ -7,13 +8,14 @@ type Project = {
   href: string;
   members: number;
   bgColor: string;
+  aiModal: any
 };
 
 const projects: Project[] = [
-  { name: 'Graph API', initials: 'GA', href: '#', members: 16, bgColor: 'bg-pink-600' },
-  { name: 'Component Design', initials: 'CD', href: '#', members: 12, bgColor: 'bg-purple-600' },
-  { name: 'Templates', initials: 'T', href: '#', members: 16, bgColor: 'bg-yellow-500' },
-  { name: 'React Components', initials: 'RC', href: '#', members: 8, bgColor: 'bg-green-500' },
+  { name: 'Graph API', initials: 'GA', href: '#', members: 16, bgColor: 'bg-pink-600', aiModal:<DialogGetStartedflowMessenger/> },
+  { name: 'Component Design', initials: 'CD', href: '#', members: 12, bgColor: 'bg-purple-600', aiModal:""},
+  { name: 'Templates', initials: 'T', href: '#', members: 16, bgColor: 'bg-yellow-500', aiModal:""},
+  { name: 'React Components', initials: 'RC', href: '#', members: 8, bgColor: 'bg-green-500', aiModal:""},
 ];
 
 function classNames(...classes: string[]): string {
@@ -43,13 +45,14 @@ export const PromptSelector: FC = () => {
                 <p className="text-gray-500">{project.members} Members</p>
               </div>
               <div className="flex-shrink-0 pr-2">
-                <button
+                {project.aiModal}
+                {/* <button
                   type="button"
                   className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">Open options</span>
                   <EllipsisVerticalIcon aria-hidden="true" className="h-5 w-5" />
-                </button>
+                </button> */}
               </div>
             </div>
           </li>

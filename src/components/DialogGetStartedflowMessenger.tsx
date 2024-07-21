@@ -29,10 +29,12 @@ export const DialogGetStartedflowMessenger = () => {
         '--df-messenger-chat-background': '#f3f6fc',
         '--df-messenger-message-user-background': '#d3e3fd',
         '--df-messenger-message-bot-background': '#fff',
-        bottom: '16px',
-        right: '16px'
+        bottom: 0,
+        right: 0,
+        top: 0,
+        width: '50%'
       }}>
-      <df-messenger-chat-bubble chat-title="aelf-agent"></df-messenger-chat-bubble>
+      <df-messenger-chat chat-title="aelf-agent"></df-messenger-chat>
     </df-messenger>
   );
 };

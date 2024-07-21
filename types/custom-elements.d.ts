@@ -4,7 +4,7 @@ declare namespace JSX {
     interface IntrinsicElements {
       'gen-search-widget': any;
       'df-messenger': any;
-      'df-messenger-chat-bubble': any
+      'df-messenger-chat': any
     }
   }
   

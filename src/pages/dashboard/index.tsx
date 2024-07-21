@@ -249,13 +249,13 @@ export default function Example() {
         <main className="lg:pl-72">
           <div className="xl:pl-96">
             <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
-              <SearchWidget />
             </div>
           </div>
         </main>
 
-        <aside className="fixed inset-y-0 left-72 hidden w-96 overflow-y-auto border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
-          <div className='w-full h-full flex justify-center items-center'>
+        <aside className="fixed inset-y-0 left-72 hidden w-auto overflow-y-auto border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
+          <div className='w-full h-full flex flex-col gap-16 items-center '>
+          <SearchWidget />
           <PromptSelector />
           </div>
         </aside>

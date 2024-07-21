@@ -17,7 +17,7 @@ const SearchWidget = () => {
   }, []);
 
   return (
-    <div className="w-96">
+    <div className="w-96 px-6">
       {/* Widget container with full width */}
       <div style={{ width: '100%' }}>
         {/* Search widget element */}
@@ -30,7 +30,7 @@ const SearchWidget = () => {
 
       {/* Element that opens the widget */}
       <input
-        placeholder="Search here"
+        placeholder="Ask aelf AI.."
         id="searchWidgetTrigger"
         className="w-full mt-2 p-2 border border-gray-300 rounded" // Tailwind classes for styling
       />
