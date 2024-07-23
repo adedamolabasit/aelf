@@ -5,6 +5,7 @@ declare namespace JSX {
       'gen-search-widget': any;
       'df-messenger': any;
       'df-messenger-chat': any
+      'df-messenger': any
     }
   }
   

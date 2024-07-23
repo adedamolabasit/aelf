@@ -33,7 +33,8 @@ export const DialogGetStartedflowMessenger = () => {
         right: 0,
         top: 0,
         width: '50%'
-      }}>
+      }}
+      >
       <df-messenger-chat chat-title="aelf-agent"></df-messenger-chat>
     </df-messenger>
   );

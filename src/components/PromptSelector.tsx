@@ -22,12 +22,12 @@ function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ');
 }
 
-export const PromptSelector: FC = () => {
+export const PromptSelector: FC<any> = () => {
   return (
     <div>
       <h2 className="text-sm font-medium text-gray-500">Pinned Projects</h2>
       <ul role="list" className="mt-3 flex flex-col gap-5">
-        {projects.map((project) => (
+        {projects.map((project: any) => (
           <li key={project.name} className="col-span-1 flex rounded-md shadow-sm">
             <div
               className={classNames(

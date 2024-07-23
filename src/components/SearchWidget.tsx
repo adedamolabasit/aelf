@@ -30,7 +30,7 @@ const SearchWidget = () => {
 
       {/* Element that opens the widget */}
       <input
-        placeholder="Ask aelf AI.."
+        placeholder="AI Asistant."
         id="searchWidgetTrigger"
         className="w-full mt-2 p-2 border border-gray-300 rounded" // Tailwind classes for styling
       />
