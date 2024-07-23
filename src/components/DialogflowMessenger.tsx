@@ -18,7 +18,7 @@ export const DialogflowMessenger: React.FC = () => {
   return (
     <>
       <df-messenger
-        oauth-client-id="707176559152-7q7bg2etufktsh99oa2sscekbh1oblaj.apps.googleusercontent.com"
+        oauth-client-id=""
         project-id="our-rock-430014-e0"
         agent-id="e9fe179e-b07e-48dc-978b-835635700fe3"
         language-code="en"
