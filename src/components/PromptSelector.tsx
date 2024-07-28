@@ -12,10 +12,10 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { name: 'Graph API', initials: 'GA', href: '#', members: 16, bgColor: 'bg-pink-600', aiModal:<DialogGetStartedflowMessenger/> },
-  { name: 'Component Design', initials: 'CD', href: '#', members: 12, bgColor: 'bg-purple-600', aiModal:""},
-  { name: 'Templates', initials: 'T', href: '#', members: 16, bgColor: 'bg-yellow-500', aiModal:""},
-  { name: 'React Components', initials: 'RC', href: '#', members: 8, bgColor: 'bg-green-500', aiModal:""},
+  { name: 'Audit Report', initials: 'AR', href: '#', members: 16, bgColor: 'bg-pink-600', aiModal:<DialogGetStartedflowMessenger/> },
+  { name: 'Solidity Craft', initials: 'CD', href: '#', members: 12, bgColor: 'bg-purple-600', aiModal:""},
+  { name: 'Transaction Summary', initials: 'TS', href: '#', members: 16, bgColor: 'bg-yellow-500', aiModal:""},
+
 ];
 
 function classNames(...classes: string[]): string {
@@ -46,13 +46,6 @@ export const PromptSelector: FC<any> = () => {
               </div>
               <div className="flex-shrink-0 pr-2">
                 {project.aiModal}
-                {/* <button
-                  type="button"
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  <span className="sr-only">Open options</span>
-                  <EllipsisVerticalIcon aria-hidden="true" className="h-5 w-5" />
-                </button> */}
               </div>
             </div>
           </li>

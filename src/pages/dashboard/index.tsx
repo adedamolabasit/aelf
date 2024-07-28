@@ -21,6 +21,7 @@ import {
 import SearchWidget from "@/components/SearchWidget";
 import { PromptSelector } from "@/components/PromptSelector";
 import { DialogflowMessenger } from "@/components/DialogflowMessenger";
+import { DialogGetStartedflowMessenger } from "@/components/DialogGetStartedflowMessenger";
 
 const navigation = [
   { name: "AI Assistant", href: "#", icon: HomeIcon, current: true },
@@ -45,7 +46,7 @@ function classNames(...classes: (string | undefined | false)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeProduct, setActiveProduct] = useState("quickStart");
 
@@ -98,10 +99,11 @@ export default function Example() {
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                 <div className="flex h-16 shrink-0 items-center">
                   <img
-                    alt="Your Company"
+                    alt="AELF DEVELOPER BOT"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                     className="h-8 w-auto"
                   />
+                  
                 </div>
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -173,7 +175,7 @@ export default function Example() {
         </Dialog>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+        <div className="hidden lg:fixed lg:inset-y-0 lg:z-0 lg:flex lg:w-72 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
             <div className="flex h-16 shrink-0 items-center">
@@ -288,15 +290,20 @@ export default function Example() {
 
         <main className="lg:pl-72">
           <div className="xl:pl-96">
-            <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6"></div>
+            <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
+
+            <DialogGetStartedflowMessenger />
+
+            </div>
           </div>
         </main>
 
-        <aside className="fixed inset-y-0 left-72 hidden w-auto overflow-y-auto border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
+        <aside className="fixed inset-y-0 left-72 hidden w-auto overflow-y-auto px-4 py-6 sm:px-6 lg:px-8 xl:block">
           <div className="w-full h-full flex flex-col gap-16 items-center ">
             <SearchWidget />
-            <DialogflowMessenger />
-            {/* <PromptSelector /> */}
+            {/* <DialogflowMessenger /> */}
+            <PromptSelector />
+
           </div>
         </aside>
       </div>
