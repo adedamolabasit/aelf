@@ -1,5 +1,5 @@
-// pages/_document.tsx
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class MyDocument extends Document {
   render() {
@@ -10,12 +10,14 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
           />
-          
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+          <Script
+            src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"
+            strategy="afterInteractive"
+          />
         </body>
       </Html>
     );
