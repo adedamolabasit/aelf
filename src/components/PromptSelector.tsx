@@ -12,10 +12,8 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { name: 'Audit Report', initials: 'AR', href: '#', members: 16, bgColor: 'bg-pink-600', aiModal:<DialogGetStartedflowMessenger/> },
-  { name: 'Solidity Craft', initials: 'CD', href: '#', members: 12, bgColor: 'bg-purple-600', aiModal:""},
-  { name: 'Transaction Summary', initials: 'TS', href: '#', members: 16, bgColor: 'bg-yellow-500', aiModal:""},
-
+  { name: 'Chain API', initials: 'CA', href: '#', members: 16, bgColor: 'bg-pink-600', aiModal:<DialogGetStartedflowMessenger/> },
+  { name: 'Network API', initials: 'NA', href: '#', members: 12, bgColor: 'bg-purple-600', aiModal:""},
 ];
 
 function classNames(...classes: string[]): string {
@@ -25,7 +23,7 @@ function classNames(...classes: string[]): string {
 export const PromptSelector: FC<any> = () => {
   return (
     <div>
-      <h2 className="text-sm font-medium text-gray-500">Pinned Projects</h2>
+      <h2 className="text-sm font-medium text-gray-500">Chat about</h2>
       <ul role="list" className="mt-3 flex flex-col gap-5">
         {projects.map((project: any) => (
           <li key={project.name} className="col-span-1 flex rounded-md shadow-sm">
