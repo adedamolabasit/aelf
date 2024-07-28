@@ -20,7 +20,7 @@ const SearchWidget: React.FC = () => {
       <div className="w-full">
         {/* Search widget element */}
         <gen-search-widget
-          configId="6e352f24-6e03-4ee2-9c0e-163c9c08be1f"
+          configId="fb33f5af-5a41-463d-b158-1b51a425dd5c"
           triggerId="searchWidgetTrigger"
           style={{ width: '200px' }} // Set width to 200px
         ></gen-search-widget>
